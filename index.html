@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="column-map" id="openlayers-map"></div>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="column-navigation">
+                <a title="Home" id="Home" class="active"><i class="fas fa-home" id="Home"></i></a>
+                <a title="Jorhat" id="Jorhat"><i class="far fa-circle" id="Jorhat"></i></a>
+                <a title="Sivsagar" id="Sivsagar"><i class="far fa-circle" id="Sivsagar"></i></a>
+                <a title="Guwahati" id="Guwahati"><i class="far fa-circle" id="Guwahati"></i></a>               
+        </div>
+    </div>
+    <div class="grid-2">
+        <div class="column-map" id="openlayers-map"></div>
+    </div>
+    <div class="grid-3">
+        <div class="column-menu" id="menu-information">
+            <p id= "cityname">Welcome To Assam cities</p> 
+            <img id="cityimage" src="./data/city_imge/indianflag.jpg" alt="indianflag">
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/b027ee6831.js" crossorigin="anonymous"></script>
     <script src="./libs/v6.13.0-dist/ol.js"></script>
     <script src="./main.js"></script>
 </body>
